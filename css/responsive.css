@@ -1,0 +1,80 @@
+@media (max-width: 1162px) {
+    .left {
+        left: -100%;
+        width: 336px;
+        background-color: rgba(225, 225, 225, .7);
+        position: absolute;
+        z-index: 1;
+        transition: all .3s;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .playbar {
+        width: 96%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width : 470px) {
+    .songbuttons {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        margin: 6px 28px;
+    }
+
+    .songinfo {
+        font-size: 12px;
+        margin-left: 13px;
+    }
+
+    .songduration {
+        margin-right: 3px;
+        font-size: 12px;
+    }
+
+    .card-container {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .playbar {
+        right: 3px;
+    }
+
+    .play {
+        top: 208px;
+        left: 174px;
+        opacity: 0;
+    }
+
+    .card:hover {
+        .play {
+            opacity: 1;
+            top: 183px;
+        }
+    }
+
+    .spotifyplaylist .card {
+        width: 243px;
+    }
+
+}
+@media (max-width : 520px){
+    .volumeinfo{
+        flex-direction: column;
+    }
+    .volume{
+        flex-direction: column;
+    }
+    .volume input{
+        width: 92px;
+    }
+}
